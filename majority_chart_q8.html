@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@3.3.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@4"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+      var spec = {"config": {"view": {"width": 400, "height": 300}, "mark": {"tooltip": null}}, "data": {"name": "data-02c9b5ec135c5024f0bd478dce6c1055"}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "gender", "legend": {"title": "Gender"}, "scale": {"scheme": "paired"}, "sort": ["No", "Yes, within eng", "Yes, out of eng"]}, "column": {"type": "ordinal", "field": "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?", "sort": ["No", "Yes, within eng", "Yes, out of eng"]}, "tooltip": [{"type": "nominal", "field": "gender"}, {"type": "nominal", "field": "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?"}, {"type": "quantitative", "field": "Percentage"}], "x": {"type": "nominal", "axis": {"title": ""}, "field": "gender"}, "y": {"type": "quantitative", "field": "Percentage"}}, "title": "Majority Group in Engineering (White & Asian): Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?", "$schema": "https://vega.github.io/schema/vega-lite/v3.3.0.json", "datasets": {"data-02c9b5ec135c5024f0bd478dce6c1055": [{"gender": "Female", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "No", "Percentage": 61.702127659574465}, {"gender": "Genderqueer/gender non-conforming", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "No", "Percentage": 100.0}, {"gender": "Male", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "No", "Percentage": 58.06451612903226}, {"gender": "Trans female", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "No", "Percentage": 100.0}, {"gender": "Female", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, out of eng", "Percentage": 14.893617021276595}, {"gender": "Male", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, out of eng", "Percentage": 19.35483870967742}, {"gender": "Female", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, within eng", "Percentage": 23.404255319148938}, {"gender": "Male", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, within eng", "Percentage": 22.58064516129032}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+
+  </script>
+</body>
+</html>
