@@ -57,7 +57,7 @@
 
 <!--   Jonathan's Story -->
 
-  <h2>We have to be here</h2>
+  <h1>We have to be here</h1>
   <p>As the oldest child of Mexican immigrants, Jonathan was the go-to person for all things tech in his family. That ranged from making a CD with music to installing a printer. Through it all, he took this unsaid responsibility with pride and passion, fueling a drive to pursue computer science.</p>
   <br>
   <p>His decision to study computer science was also inspired by his father, who had earned the equivalent of an associate’s degree back in Mexico for Computer Science but was unable to continue his education. “In a way, it was kind of like finishing off what my dad had started,” the sixth-year Computer Science (CSC) student said thoughtfully. </p>
@@ -66,13 +66,15 @@
   <p>
     <i>"In a way, it was kind of like finishing off what my dad had started."</i>
     <br>
-    <b>-Jonathan, Sixth-Year, Computer Science</b>
+    <b>-Jonathan, Sixth-Year Computer Science Student</b>
   </p>
   <br>
   <p>However, he questioned if he had chosen the right major. “I would definitely see my classmates understand the language faster, pick it up faster and I would talk to some of them and they would have previous experience with like programming and coding.... whereas I had just began like a quarter ago,” he said. In his mind he struggled more than the “average computer science student.”</p>
   <br>
 <!--   Achievement Gap Graph -->
-  <b>What achievement gaps exist for students of color pursuing engineering at Cal Poly?</b>
+  <h3>What achievement gaps exist for students of color pursuing engineering at Cal Poly?</h3>
+
+<div class="altair_viz">
 
 <html>
 <head>
@@ -112,6 +114,7 @@
   </script>
 </body>
 </html>
+</div>
 
   <br>
   <i>Source of Data: CSU Success Dashboard</i>
@@ -126,17 +129,18 @@
   <br>
   <p>Outside of these computing spaces, Jonathan has found his circle of friends. Even so, he notes that his presence as a Computer Science major is important for increasing visibility and thus encouraging a future generation of computing students of color. “Maybe I didn’t fit in at Cal Poly at first, but it’s something I’ve grown to accept that needs to happen... or that I needed to be here,” Jonathan said. “Ultimately, we have to be here to improve the experience of others.”</p>
   <br>
-  <img src="otis.jpeg" style="width: 70%; height: 70%"/>
+  <p>Like other underrepresented students, Jonathan’s very presence redefines what it means to be an engineering student, with the vision of creating a future of engineers who reflect the diversity of all people, working to truly serve the interests of everyone.</p>
+  <br>
+  <img src="otis.jpeg" style="width: 100%; height: 100%"/>
   <br><br>
   <p>
   <i>There’s no doubt about it – visibility can be incredibly impactful. Fellow computer scientist Otis will never forget when he was first introduced to computer science by his older brother at the young age of thirteen years old.</i>
   <br><br>
     <i>“I made websites when I was a kid – showing all my personality traits like how much I liked Lebron James and playing FIFA!”</i>
     <br>
-    <b>-Otis, Third-Year, Computer Science</b>
+    <b>-Otis, Third-Year Computer Science Student</b>
   </p>
   <br>
-  <p>Like other underrepresented students, Jonathan’s very presence redefines what it means to be an engineering student, with the vision of creating a future of engineers who reflect the diversity of all people, working to truly serve the interests of everyone.</p>
 
   <!DOCTYPE html>
 <html>
@@ -158,31 +162,20 @@
 </head>
 <body>
 
+
 <br><br>
 <!-- Anna's Story -->
-<h2>Civil Engineering “Still”</h2>
+<h1>Civil Engineering “Still”</h1>
 
 <p>Anna identifies as a Latina in engineering – more specifically, a fourth-year Civil Engineering (CE) “STILL!” major. “I’ve stuck with it! Probably not the best choice, honestly,” she mused. Ever since her first year, she had considered switching majors.</p>
 <br>
 <p>Coming into Cal Poly as a 4.0 student in high school, she did not expect to struggle. “The tipping point for me was my classes and feeling like I was failing at them and not really being able to talk to my professors about it because in engineering it’s so focused on the work and not necessarily the person doing the work,” she said.</p>
 <br>
-<!-- Spiral Photo -->
- <img src="gina.jpeg" style="width: 50%; height: 50%"/>
- <br>
-  <p>
-  <br>
-  <i>Similar to Anna, another female student in engineering, Gina, struggled with self-doubt.</i>
-  <br><br>
-    <i>“For myself, a lot of it came from having expectations of yourself and then not meeting them... and it’s this self-esteem kind of issue that spirals downwards. That’s kind of what happened to me. It’s not that big of a deal, but I had never really experienced anxiety until I came to Cal Poly.”</i>
-    <br><br>
-    <b>-Gina, Third-Year Electrical Engineering</b>
-  </p>
-<br>
 <p>For many of the support classes that Anna had to take for her major, she regards them as “weeder classes,” classes that are notorious for their rigor and failure rates.</p>
 <br>
 
 <!-- Question 15 Graph -->
-<b>How do Cal Poly engineering students feel about weed out culture?</b>
+<h3>How do Cal Poly engineering students feel about weed out culture?</h3>
 <img src="gender_q15.png">
 <br>
 <p><i>Looking at the difference opinions through the lens of gender, we can see that women are divided about this issue. Approximately 35% disagree (adding both strongly disagree and disagree), 27% agree (adding both strongly agree and agree), and 22% are neutral. Slightly more men seem to agree, with a percentage of 40% (adding both strongly agree and agree).</i></p>
@@ -202,14 +195,93 @@
 <p>“At that point, it was like... I chose CE and I chose CE for a reason. I focused more on regrounding myself and figuring out why I chose that major to begin with, and figuring out how I could still reach that goal, even though I technically wasn’t happy with the classes I was taking,” she explained.</p>
 <br>
 
-<b>How many engineering students consider switching their major?</b> 
+<h3>How many engineering students consider switching their major?</h3> 
 <!-- Question 8 Graph -->
 <br>
-<div id="q8_majority"></div>
-<img src="majority_q8.png">
+<!-- <div id="q8_majority"></div> -->
+<div class="altair_viz_2">
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@3.3.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@4"></script>
+</head>
+<body>
+  <div id="vis_majority_q8"></div>
+  <script>
+      var spec_2 = {"config": {"view": {"width": 400, "height": 300}, "mark": {"tooltip": null}}, "data": {"name": "data-02c9b5ec135c5024f0bd478dce6c1055"}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "gender", "legend": {"title": "Gender"}, "scale": {"scheme": "paired"}, "sort": ["No", "Yes, within eng", "Yes, out of eng"]}, "column": {"type": "ordinal", "field": "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?", "sort": ["No", "Yes, within eng", "Yes, out of eng"]}, "tooltip": [{"type": "nominal", "field": "gender"}, {"type": "nominal", "field": "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?"}, {"type": "quantitative", "field": "Percentage"}], "x": {"type": "nominal", "axis": {"title": ""}, "field": "gender"}, "y": {"type": "quantitative", "field": "Percentage"}}, "title": "Majority Group in Engineering (White & Asian): Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?", "$schema": "https://vega.github.io/schema/vega-lite/v3.3.0.json", "datasets": {"data-02c9b5ec135c5024f0bd478dce6c1055": [{"gender": "Female", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "No", "Percentage": 61.702127659574465}, {"gender": "Genderqueer/gender non-conforming", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "No", "Percentage": 100.0}, {"gender": "Male", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "No", "Percentage": 58.06451612903226}, {"gender": "Trans female", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "No", "Percentage": 100.0}, {"gender": "Female", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, out of eng", "Percentage": 14.893617021276595}, {"gender": "Male", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, out of eng", "Percentage": 19.35483870967742}, {"gender": "Female", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, within eng", "Percentage": 23.404255319148938}, {"gender": "Male", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, within eng", "Percentage": 22.58064516129032}]}};
+      var embedOpt_2 = {"mode": "vega-lite"};
+
+      function showError(el_2, error){
+          el_2.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el_2 = document.getElementById('vis_majority_q8');
+      vegaEmbed("#vis_majority_q8", spec_2, embedOpt_2)
+        .catch(error => showError(el_2, error));
+
+  </script>
+</body>
+</html>
+</div>
 <br>
-<div id="q8_minority"></div>
-<img src="minority_q8.png">
+<!-- <div id="q8_minority"></div> -->
+<div class="altair_viz_2">
+<html>
+<head>
+  <style>
+    .vega-actions a {
+        margin-right: 12px;
+        color: #757575;
+        font-weight: normal;
+        font-size: 13px;
+    }
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@3.3.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@4"></script>
+</head>
+<body>
+  <div id="vis_minority_q8"></div>
+  <script>
+      var spec_3 = {"config": {"view": {"width": 400, "height": 300}, "mark": {"tooltip": null}}, "data": {"name": "data-5cae000c634d9a50e7fed86a0a6f73d3"}, "mark": "bar", "encoding": {"color": {"type": "nominal", "field": "gender", "legend": {"title": "Gender"}, "scale": {"scheme": "paired"}, "sort": ["No", "Yes, within eng", "Yes, out of eng"]}, "column": {"type": "ordinal", "field": "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?", "sort": ["No", "Yes, within eng", "Yes, out of eng"]}, "tooltip": [{"type": "nominal", "field": "gender"}, {"type": "nominal", "field": "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?"}, {"type": "quantitative", "field": "Percentage"}], "x": {"type": "nominal", "axis": {"title": ""}, "field": "gender"}, "y": {"type": "quantitative", "field": "Percentage"}}, "title": "Minority Group in Engineering (Black, Hispanic, & Indigenous): Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?", "$schema": "https://vega.github.io/schema/vega-lite/v3.3.0.json", "datasets": {"data-5cae000c634d9a50e7fed86a0a6f73d3": [{"gender": "Female", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "No", "Percentage": 47.82608695652174}, {"gender": "Genderqueer/gender non-conforming", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "No", "Percentage": 50.0}, {"gender": "Male", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "No", "Percentage": 61.53846153846154}, {"gender": "Female", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, out of eng", "Percentage": 34.78260869565217}, {"gender": "Male", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, out of eng", "Percentage": 15.384615384615385}, {"gender": "Female", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, within eng", "Percentage": 17.391304347826086}, {"gender": "Genderqueer/gender non-conforming", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, within eng", "Percentage": 50.0}, {"gender": "Male", "Have you considered switching out of your current major? If so, did you consider switching out of engineering or to a different major within engineering?": "Yes, within eng", "Percentage": 23.076923076923077}]}};
+      var embedOpt_3 = {"mode": "vega-lite"};
+
+      function showError(el_3, error){
+          el_3.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el_3 = document.getElementById('vis_minority_q8');
+      vegaEmbed("#vis_minority_q8", spec_3, embedOpt_3)
+        .catch(error => showError(el_3, error));
+
+  </script>
+</body>
+</html>
+</div>
+
 <br>
 <p><i>We can see that for women in the minority group, they have considered switching majors much more! Especially for women in the minority group who have considered switching out of engineering. If we add up the total percentages for women who have considered switching majors at all (including both within engineering and outside of engineering), we see that a total of 37% of women in the majority (white & Asian) have considered switching out of their major vs. a total of 51% of women in the minority (black, hispanic, & indigenous).</i></p>
 <br>
@@ -222,6 +294,18 @@
 <p>“We really like doing things together which is why a lot of majors say that if you’re in civil engineering, you can’t do it by yourself, you need someone else to do it with you... because it’s one hundred percent true!” she said smiling.</p>
 <br>
 <p>Even though Anna still has doubts about herself in the major, she is proud of her perseverance. “I’m really proud of how far I’ve come and the fact that I’ve stuck with it.”</p>
+<br>
+ <img src="gina.jpeg" style="width: 90%; height: 90%"/>
+ <br>
+  <p>
+  <br>
+  <i>Similar to Anna, another female student in engineering, Gina, struggled with self-doubt.</i>
+  <br><br>
+    <i>“For myself, a lot of it came from having expectations of yourself and then not meeting them... and it’s this self-esteem kind of issue that spirals downwards. That’s kind of what happened to me. It’s not that big of a deal, but I had never really experienced anxiety until I came to Cal Poly.”</i>
+    <br>
+    <b>-Gina, Third-Year Electrical Engineering Student</b>
+  </p>
+<br>
 
 <br><br><br>
 <!-- Nancy's Story -->

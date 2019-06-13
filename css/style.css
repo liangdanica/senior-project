@@ -168,3 +168,20 @@
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
 }
+
+.altair_viz {
+
+overflow-y: scroll;
+height: 400px;
+width: 700px;
+
+}
+
+.altair_viz_2 {
+
+overflow-y: scroll;
+height: 600px;
+width: 700px;
+
+}
+
